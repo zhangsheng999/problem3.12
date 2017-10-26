@@ -14,13 +14,13 @@
 ![](https://github.com/zhaozhanyi0804/computationalphysics_N2015301020052/blob/master/Homework_7/7-6.jpg)
 
 #### 将上式转化为两个一阶线性常微分方程：
-      dω/dt=-g/l*sinθ-q*dθ/dt++FD*sin(ΩD*ti)
+      dω/dt=-g/l*sinθ-q*dθ/dt+FD*sin(ΩD*ti)
       
       dω/dt=ω
 
 ## 由此可得具体的数值计算方法
 
-   ωi+1=ωi-[(g/l)sinθi-qωi+FD*sin(ΩD*ti)]*∆t
+    ωi+1=ωi-[(g/l)sinθi-q*ωi+FD*sin(ΩD*ti)]*∆t
    
     θi+1=θi+ωi+1*∆t
    
