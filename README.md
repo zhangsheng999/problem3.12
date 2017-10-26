@@ -13,14 +13,62 @@
 
 ![](https://github.com/zhaozhanyi0804/computationalphysics_N2015301020052/blob/master/Homework_7/7-6.jpg)
 
+#### 将上式转化为两个一阶线性常微分方程：
+      dω/dt=-g/l*sinθ-q*dθ/dt++FD*sin(ΩD*ti)
+      
+      dω/dt=ω
+
 ## 由此可得具体的数值计算方法
 
-   ωi+1=ωi-[(g/l)sinθi-qωi+FDsin(ΩD*ti)]*∆t
+   ωi+1=ωi-[(g/l)sinθi-qωi+FD*sin(ΩD*ti)]*∆t
    
-   θi+1=θi+ωi+1*∆t
+    θi+1=θi+ωi+1*∆t
    
-   ti+1=ti+∆t
+    ti+1=ti+∆t
    
-   取g=9.8   l=9.8
+   
+ #### 取g=9.8   l=9.8
    
  ## 驱动力变化时摆的运动情况变化如下图所示：
+ 
+ ![](https://github.com/zhangsheng999/1111/blob/master/d.png?raw=true)
+ 
+ [代码](https://github.com/zhangsheng999/1111/blob/master/d.1.txt)
+ 
+ 
+ 
+ ## 参数q变化时摆的运动情况变化如下图所示：
+ 
+ ![](https://github.com/zhangsheng999/1111/blob/master/e.png?raw=true)
+ 
+ [代码](https://github.com/zhangsheng999/1111/blob/master/e.1.txt)
+ 
+ 
+ ### 以上即为线性驱动力下的混沌现象
+ 
+ 
+ ### 题3.12 In constructing the Poincaré section in Figure 3.9 we plotted points only at times that were in phase with the drive force; that is, at times t≈2πn/ΩD , where n is an integer. At these values of t the driving force passed through zero [see (3.18)]. However, we could just as easily have chosen to make the plot at times corresponding to a maximum of the drive force, or at times π/4  out-of-phase with this force, etc. Construct the Poincaré sections for these cases and compare them with Figure 3.9.
+ 
+ ### 以下即为非线性驱动力下的图像（可与上面的图像做比较）
+ ## FD=1.2时
+ 
+ ![](https://github.com/zhangsheng999/1111/blob/master/f.png?raw=true)
+ 
+ 
+ [代码](https://github.com/zhangsheng999/1111/blob/master/f.1.txt)
+ 
+ 
+ 
+ ## 当只选取 t≈2πn/ΩD 时
+ 
+ ![](https://github.com/zhangsheng999/1111/blob/master/g.png?raw=true)
+ 
+ 
+ [代码](https://github.com/zhangsheng999/1111/blob/master/g.1.txt)
+ 
+ ### 在比较线性驱动力和非线性驱动力所得的图像后，我们可以很容易的得到在非线性驱动力下可以得到混沌现象，也侧面解释了开头百度的得到的研究表明：“进一步研究表明，混沌是非线性动力系统的固有特性，是非线性系统普遍存在的现象。牛顿确定性理论能够充分处理的多为线性系统，而线性系统大多是由非线性系统简化来的。因此，在现实生活和实际工程技术问题中，混沌是无处不在的。”
+ 
+ 
+ 
+ > * 致谢夏海峰学长提供的参考代码
+ 
